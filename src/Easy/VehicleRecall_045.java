@@ -21,6 +21,9 @@ public class VehicleRecall_045 {
         } else {
             System.out.println("Your vehicle is fine, enjoy!");
         }
+
+
+
     }
 }
 /*
