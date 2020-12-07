@@ -1,18 +1,39 @@
 package Easy;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class OnlyPractice {
-    public static void main(String[] args) {
+    public String name, jobTitle, ID, companyName ;
+    public double salary;
+    public LocalDate hireDate;
+    public char gender;
 
-        DateTimeFormatter df =DateTimeFormatter.ofPattern("yyyy/MM/dd EEEE");
-        LocalDate dOfB = LocalDate.of(1979,8,26);
-        System.out.println(dOfB.format(df));
 
-int age = LocalDate.now().getYear()-dOfB.getYear();
-        System.out.println(age);
+    public void setInfo(String name, String jobTitle, String ID, String companyName, double salary, LocalDate hireDate, char gender) {
+        this.name = name;
+        this.jobTitle = jobTitle;
+        this.ID = ID;
+        this.companyName = companyName;
+        this.salary = salary;
+        this.hireDate = hireDate;
+        this.gender = gender;
 
     }
 
+
+    public String toString() {
+        return "OnlyPractice{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID='" + ID + '\'' +
+                ", companyName='" + companyName + '\'' +
+                ", salary=" + salary +
+                ", hireDate=" + hireDate +
+                ", gender=" + gender +
+                '}';
+    }
 }
