@@ -4,8 +4,8 @@ public class Static_PlusMinus_222 {
 
     public static void main(String[] args) {
 
-        System.out.println("1+1 = "+ Cals.plus(1,1) );
-        System.out.println("1-1 = "+Cals.minus(1,1) );
+       System.out.println("1+1 = "+ Cals.plus(1,1) );
+       System.out.println("1-1 = "+Cals.minus(1,1) );
     }
 
 
